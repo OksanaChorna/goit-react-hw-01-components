@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
-  console.log(title);
   return (
     <section className="statistics">
-      {title !== '' ? <h2 className="title">{title}</h2> : ''}
+      {title !== '' && <h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
         {stats.map(stat => (
@@ -21,7 +20,11 @@ const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  // stats: PropTypes.objectOf(PropTypes.number).isRequired,
+  // stats: PropTypes.shape({
+  //   label: PropTypes.string,
+  //   percentage: PropTypes.number,
+  //   id: PropTypes.number,
+  // }),
 };
 
 export default Statistics;
