@@ -38,7 +38,7 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string,
-  stats: PropTypes.object.isRequired, //уточнити
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
 };
 
 export default Profile;
