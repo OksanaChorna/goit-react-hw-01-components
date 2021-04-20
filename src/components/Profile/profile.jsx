@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // eslint-disable-next-line no-unused-vars
 import styles from './Profile.module.css';
-console.log(styles);
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
