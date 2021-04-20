@@ -1,5 +1,4 @@
 const FriendListItem = ({ avatar, name, isOnline }) => {
-  console.log(avatar);
   return (
     <li className="item">
       {isOnline === true ? (
