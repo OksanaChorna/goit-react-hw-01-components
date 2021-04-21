@@ -14,9 +14,9 @@ const Statistics = ({ title, stats }) => {
       <ul className={styles.statList}>
         {stats.map(({ id, label, percentage }) => (
           <li
+            key={id}
             className={styles.item}
             style={{ backgroundColor: randomColor() }}
-            key={id}
           >
             <span className={styles.label}>{label}</span>
             <span className={styles.percentage}>{percentage}%</span>
